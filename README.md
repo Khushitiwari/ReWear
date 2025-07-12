@@ -47,8 +47,8 @@ npm install
 # Start local dev server
 npm run dev
 Then open http://localhost:5173 or http://localhost:3000 (based on your setup).
-
-🔐 Appwrite Configuration
+ 
+##🔐 Appwrite Configuration
 🧾 1. Create .env file
 env
 Copy
@@ -72,14 +72,17 @@ https://your-site-name.vercel.app
 https://your-site-name.netlify.app
 ⚠️ Make sure you match the port and platform you're using.
 
-🧑‍🤝‍🧑 Team Member
+
+
+-----------
+## 🧑‍🤝‍🧑 Team Member
 	
 👩‍💻 Khooshi Tiwari
 👩‍💻 Soha Patel
 👩‍💻 Shreya Mishra
+-----------
 
-
-📸 Screenshots
+## 📸 Screenshots
 Landing Page
 
 Add more screenshots like items page or login page by placing images in assets/ and referencing them like:
