@@ -83,7 +83,12 @@ https://your-site-name.netlify.app
 -----------
 
 ## 📸 Screenshots
-Landing Page
+![Home Page](<img width="1898" height="911" alt="Screenshot 2025-07-12 164914" src="https://github.com/user-attachments/assets/3ef6307a-e48e-4bb9-bff4-7c55c3a1e067" />)
+![LogIn Page](<img width="1896" height="907" alt="Screenshot 2025-07-12 165004" src="https://github.com/user-attachments/assets/e768fe24-64ee-40b8-8bed-5548ae7d5f80" />)
+![SignUp Page](<img width="1891" height="907" alt="Screenshot 2025-07-12 165013" src="https://github.com/user-attachments/assets/f4875c68-8fe6-45c6-a7a1-57dd795b3d69" />)
+![Browse by categories](<img width="1887" height="855" alt="Screenshot 2025-07-12 164941" src="https://github.com/user-attachments/assets/f7b90c4b-cab4-4383-94fe-5fba574e593d" />)
 
-Add more screenshots like items page or login page by placing images in assets/ and referencing them like:
-![Items Page](./assets/items.png)
+
+
+
+
