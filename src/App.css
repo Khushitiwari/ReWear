@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+
+ body{
+    background-color:linear-gradient(to right, #dc8cd5, #1372d1);
+    
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-animation {
+  animation: scroll 25s linear infinite;
+}
