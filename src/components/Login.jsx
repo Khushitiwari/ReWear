@@ -1,17 +1,27 @@
-
-import React from 'react'
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import { login } from "../appwrite-backend/auth";
 
 export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const navigate = useNavigate()
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle login logic here
-    alert(`Email: ${email}\nPassword: ${password}`)
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setSuccess(false);
+    try {
+      await login(email, password);
+      setSuccess(true);
+      // Optionally redirect after login:
+      // navigate("/all-items");
+    } catch (err) {
+      setError(err.message || "Login failed");
+    }
   }
 
   return (
@@ -19,6 +29,8 @@ export default function Login() {
       <div className="bg-white rounded-xl shadow-lg p-8 w-full max-w-md">
         <h2 className="text-3xl font-bold text-center text-violet-700 mb-6">Login</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
+          {error && <div className="text-red-600 text-center">{error}</div>}
+          {success && <div className="text-green-600 text-center">Login successful!</div>}
           <div>
             <label className="block text-lg font-medium text-gray-700 mb-2" htmlFor="email">
               Email
