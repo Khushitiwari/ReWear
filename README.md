@@ -1,12 +1,86 @@
-# React + Vite
+# 👗 ReWear — Give Clothes a Second Life ♻️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ReWear** is a community platform that lets you **exchange unused clothes** through direct swaps or a point-based system. Reduce textile waste, embrace sustainable fashion, and give your wardrobe a fresh purpose.
 
-Currently, two official plugins are available:
+![ReWear Screenshot](./assets/screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌟 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 👚 Upload and list unused clothes
+- 🔁 Swap directly with others or use a point system
+- 🔍 Browse items by category or type
+- 🔐 User authentication (Appwrite)
+- 🖥️ Responsive and modern UI
+
+---
+
+## 🚀 Tech Stack
+
+| Category        | Tech Used             |
+|-----------------|------------------------|
+| Frontend        | React.js, Tailwind CSS |
+| Backend         | Appwrite               |
+| Hosting         | Netlify / Vercel       |
+| Version Control | Git & GitHub           |
+
+---
+
+## 🛠️ Getting Started
+
+### ✅ Prerequisites
+
+- Node.js & npm
+- Git
+
+### 🚀 Setup Instructions
+
+bash
+# Clone the repository
+git clone https://github.com/your-username/rewear.git
+cd rewear
+
+## Install dependencies
+npm install
+
+# Start local dev server
+npm run dev
+Then open http://localhost:5173 or http://localhost:3000 (based on your setup).
+
+🔐 Appwrite Configuration
+🧾 1. Create .env file
+env
+Copy
+Edit
+VITE_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+VITE_APPWRITE_PROJECT_ID=your_project_id
+🌐 2. Add Web Platform in Appwrite Console
+Go to:
+
+arduino
+Copy
+Edit
+Appwrite Console → Your Project → Settings → Platforms → Add Web
+Add the following hostnames:
+
+arduino
+Copy
+Edit
+http://localhost:5173
+https://your-site-name.vercel.app
+https://your-site-name.netlify.app
+⚠️ Make sure you match the port and platform you're using.
+
+🧑‍🤝‍🧑 Team Member
+	
+👩‍💻 Khooshi Tiwari
+👩‍💻 Soha Patel
+👩‍💻 Shreya Mishra
+
+
+📸 Screenshots
+Landing Page
+
+Add more screenshots like items page or login page by placing images in assets/ and referencing them like:
+![Items Page](./assets/items.png)
